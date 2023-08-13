@@ -276,7 +276,7 @@
 
 .Dashboard_Text .Child_Text{
   display: inline-block;
-  color: #000000;
+  color: #00000000;
   font-size: 22px;
   font-weight: 450;
   margin: 14px;
@@ -288,142 +288,83 @@
   }
 }
 
-nav {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  line-height: 80px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  background: #fcfdfb;
-  z-index: 1;
-  border-bottom:1px solid #364f6b;
+-----
+
+body{
+    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgb(14, 17, 224) 100%)
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.slider {
+    overflow: hidden;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 350px;
+    margin-top: 50px;
 }
 
-nav ul li {
-  float: left;
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
 }
 
-nav ul li a {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  padding: 0px 16px 0px 16px;
-  text-decoration: none;
+.slider figure img {
+    float: left;
+    width: 20%;
 }
 
-nav ul li a:hofer {
-  text-decoration: underline;
-}
-
-section {
-  margin: auto;
-  display: flex;
-  margin-bottom: 50px;
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left :-200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
 }
 
 .kolom {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 80%; /* Reduce the width to make space for the 20% shift */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 300px;
 }
 
 .kolom .deskripsi {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'comic sans ms';
-  color: #364f6b;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
 }
 
 h2 {
-  font-family: 'comic sans ms';
-  font-weight: 800;
-  font-size: 45px;
-  margin-bottom: 20px;
-  color: #364f6b;
-  width: 100%;
-  line-height: 50px;
-}
-
-.kolom .deskripsi02 {
-  font-family: comic sans-serif;
-  font-size: 20px;
-}
-
-/* Add a new class for shifting content to the right */
-.shift-right {
-  margin-left: 10%; /* Move content 20% to the right */
-}
-
-/* Apply the new class to the image */
-.kolom img {
-  width: 100%; /* Ensure the image takes full width */
-  max-width: 100%; /* Allow the image to scale down if necessary */
-}
-
-/* Media query for responsiveness */
-@media screen and (max-width: 768px) {
-  .kolom {
-    width: 100%; /* Full width on smaller screens */
-  }
-  .shift-right {
-    margin-left: 10%; /* Reset margin for smaller screens */
-  }
-}
-
-#event {
-  margin-top: auto;
-  display: flex;
-  margin-bottom: 505px;
-}
-
-.kolom {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 80%; /* Reduce the width to make space for the 20% shift */
-}
-
-.kolom .event {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'comic sans ms';
-  color: #364f6b;
-}
-
-#event h2 {
-  font-family: 'comic sans ms';
-  font-weight: 800;
-  font-size: 45px;
-  margin-bottom: 20px;
-  color: #364f6b;
-  width: 100%;
-  line-height: 50px;
-}
-
-.kolom p {
-  font-family: comic sans-serif;
-  font-size: 20px;
-}
-
-/* Add a new class for shifting content to the right */
-.shift-right {
-  margin-left: 20%; /* Move content 20% to the right */
-}
-
-/* Media query for responsiveness */
-@media screen and (max-width: 768px) {
-  .kolom {
-    width: 100%; /* Full width on smaller screens */
-  }
-  .shift-right {
-    margin-left: 0; /* Reset margin for smaller screens */
-  }
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
 }
